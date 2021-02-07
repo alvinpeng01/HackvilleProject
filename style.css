@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.grid {
+    margin: 0 10px 0;
+    grid-row-gap: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+#head {
+    background: #FE2179;
+    background-size: cover;
+    font-size: 5.5em;
+    font-family: 'Sriracha', cursive;
+    color: white;
+    text-shadow: 2px 2px 7px blue;
+    animation: myMove 2s linear 0s 1 normal;
+    margin-top: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+audio{
+    align-items: center;
+    margin:0 auto;
+}
+@keyframes myMove {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: 200px;
+    }
+}
+div[class*=box] {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.box-1 {
+    background-color: #006AF9;
+    font-family: 'Quicksand', sans-serif;
+}
+.box-2 {
+    background-color: #440BD4;
+    font-family: 'Quicksand', sans-serif;
+}
+.box-3 {
+    background-color: #FE2179;
+    font-family: 'Quicksand', sans-serif;
+}
+.box-4 {
+    background-color: #E92EFB;
+    font-family: 'Quicksand', sans-serif;
+}
+.box-5 {
+    background-color:black ;
+    font-family: 'Quicksand', sans-serif;
+}
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 1000px;
+    cursor: pointer;
+}
+
+/* 
+  ========================
+      BUTTON ONE
+  ========================
+  */
+
+.btn-one {
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-one span {
+    transition: all 0.3s;
+}
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+.btn-one:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-one:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+/* 
+  ========================
+      BUTTON TWO
+  ========================
+  */
+
+.btn-two {
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-two span {
+    transition: all 0.3s;
+}
+.btn-two::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+.btn-two:hover span {
+    letter-spacing: 2px;
+}
+.btn-two:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.btn-two::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-two:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+.btn-three {
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-three span {
+    transition: all 0.3s;
+}
+.btn-three::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+.btn-three:hover span {
+    letter-spacing: 2px;
+}
+.btn-three:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.btn-three::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-three:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+.btn-four {
+    color: #fff;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-four span {
+    transition: all 0.3s;
+}
+.btn-four::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+.btn-four:hover span {
+    letter-spacing: 2px;
+}
+.btn-four:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.btn-four::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-four:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+.btn-five {
+    color: white;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-five span {
+    transition: all 0.3s;
+}
+.btn-five::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0.1, 1);
+}
+.btn-five:hover span {
+    letter-spacing: 2px;
+}
+.btn-five:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+.btn-five::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-five:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+p {
+    font-family: 'Nunito';
+    font-size: 22px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+
+/***************************************Start of Style of CSS*********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@300&display=swap');
+
+/*Background Color */
+
+.topnav {
+    background-color: #04005E;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #fff;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    border-bottom: 5px solid #fff;
+    padding-bottom: 5px;
+    color: fff;
+}
+
+/* Add an active class to highlight the current page */
+
+.topnav a.active {
+    color: #fff;
+    border-bottom: 5px solid #fff;
+    padding-bottom: 5px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+
+.topnav .icon {
+    display: none;
+}
+
+/*Welcome Header*/
+
+.header {
+    font-family: 'Nunito', sans-serif;
+    background: url(../img/homepage.png)center center no-repeat;
+    text-align: center;
+    background-size: cover;
+    margin-top: -20px;
+    padding: 150px;
+    color: white;
+}
+.header h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.header pullquote {
+    text-align: center;
+    padding: -20px;
+    font-size: 20px;
+}
+.column-of-text {
+    margin: 50px auto 0 auto;
+    width: 70vw;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+.column of text p {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+}
+footer {
+    background-color: #04005E;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    padding: 10px 10px;
+}
+section.images {
+    display: grid;
+    grid-row-gap: 10px;
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+img {
+    width: 100%;
+}
+#image {
+    width: 80%;
+}
+#text {
+    color: white;
+    font-size: 34px;
+    font-family: 'Quicksand', sans-serif;
+}
+#scoreText {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+#buttonFive {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.images {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+.images h4 {
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+#village {
+    margin-bottom: 50px;
+}
