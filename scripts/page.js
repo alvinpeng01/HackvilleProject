@@ -305,7 +305,7 @@ function d_5() {
     button1.innerHTML = "Mamma Mia - ABBA";   
     button2.innerHTML = "Super Trouper - ABBA";
     button3.innerHTML = "Eternal Flame - The Bangles";
-    button4.innerHTML = "Dancing Queen";
+    button4.innerHTML = "Dancing Queen - ABBA";
     button1.addEventListener('click', incorrect_d_5);
     button2.addEventListener("click", incorrect_d_5);
     button3.addEventListener("click", incorrect_d_5);
