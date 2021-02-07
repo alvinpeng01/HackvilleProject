@@ -310,7 +310,7 @@ function d_5() {
     button2.addEventListener("click", incorrect_d_5);
     button3.addEventListener("click", incorrect_d_5);
     button4.addEventListener("click", correct_d_5);
-    audio.setAttribute("src", "../Music/queen.mp3");
+    audio.setAttribute("src", "../Music/Queen.mp3");
 
     
 }
